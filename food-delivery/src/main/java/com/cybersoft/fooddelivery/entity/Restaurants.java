@@ -30,4 +30,68 @@ public class Restaurants {
 
     @OneToMany(mappedBy = "restaurants")
     private Set<CategoryRestaurant> categoryRestaurants;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Set<RatingRestaurant> getRatingRestaurants() {
+        return ratingRestaurants;
+    }
+
+    public void setRatingRestaurants(Set<RatingRestaurant> ratingRestaurants) {
+        this.ratingRestaurants = ratingRestaurants;
+    }
+
+    public Set<CategoryRestaurant> getCategoryRestaurants() {
+        return categoryRestaurants;
+    }
+
+    public void setCategoryRestaurants(Set<CategoryRestaurant> categoryRestaurants) {
+        this.categoryRestaurants = categoryRestaurants;
+    }
 }

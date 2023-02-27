@@ -20,4 +20,36 @@ public class CategoryRestaurant {
 
     @OneToMany(mappedBy = "categoryRestaurant")
     private Set<Foods> foods;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Categorys getCategorys() {
+        return categorys;
+    }
+
+    public void setCategorys(Categorys categorys) {
+        this.categorys = categorys;
+    }
+
+    public Restaurants getRestaurants() {
+        return restaurants;
+    }
+
+    public void setRestaurants(Restaurants restaurants) {
+        this.restaurants = restaurants;
+    }
+
+    public Set<Foods> getFoods() {
+        return foods;
+    }
+
+    public void setFoods(Set<Foods> foods) {
+        this.foods = foods;
+    }
 }
